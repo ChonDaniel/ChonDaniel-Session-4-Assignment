@@ -1,0 +1,34 @@
+function main()
+    first = GetFirst()
+    second = GetSecond()
+    name = GetName()
+    total = GetTotal(first, second)
+    PrintTotal(str(name), Int(first), Int(second), Int(total))
+end 
+
+function GetName()
+    output "What is your last name? "
+    input name
+    return name
+end 
+
+function GetFirst()
+    output "What was your first score?"
+    input first
+    return first
+end 
+
+function GetSecond()
+    output "What was your second score?"
+    input second
+    return second
+end 
+
+function GetTotal(first, second)
+    total = first * 0.4 + second * 0.6
+    return total
+end
+
+function PrintTotal(total, name, first, second)
+    output name + " First score: " + first + " Second score: " + second + "Total: " + total
+end

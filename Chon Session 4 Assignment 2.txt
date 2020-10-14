@@ -1,0 +1,30 @@
+def get_name():
+    print("What is your last name? ")
+    name = input()
+    return name
+
+def get_first():
+    print("What was your first score?")
+    first = int(input())
+    return first
+
+def get_second():
+    print("What was your second score?")
+    second = int(input())
+    return second
+
+def get_total(first, second):
+    total = first * 0.4 + second * 0.6
+    return total
+
+def print_total(total, name, first, second):
+    print(str(total) + " First score: " + str(first) + " Second score: " + str(name) + " Total: " + str(second))
+
+def main():
+    first = get_first()
+    second = get_second()
+    name = get_name()
+    total = get_total(first, second)
+    print_total(str(name), int(first), int(second), int(total))
+    
+main()

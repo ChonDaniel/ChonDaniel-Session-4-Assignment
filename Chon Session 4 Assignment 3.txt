@@ -1,0 +1,18 @@
+def airline_price():
+    print("How many airline tickets and how much does each ticket cost? ")
+    ticket = int(input())
+    price = int(input())
+    cost = ticket * price
+    tax = 0.07 * cost
+    total = cost + tax
+    print("Number of tickets: " + str(ticket))
+    print("Price per ticket: " + str(price))
+    print("Cost: " + str(cost))
+    print("Tax: " + str(round(tax,2)))
+    print("Total: " + str(total))
+    return cost,tax,total
+
+def main():
+    airline_price()
+    
+main()

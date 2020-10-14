@@ -1,0 +1,18 @@
+function main()
+    AirlinePrice()
+end 
+
+function AirlinePrice()
+    output "How many airline tickets and how much does each ticket cost? "
+    input ticket
+    input price
+    cost = ticket * price
+    tax = 0.07 * cost
+    total = cost + tax
+    output "Number of tickets: " + ticket
+    output "Price per ticket: " + price
+    output "Cost: " + cost
+    output "Tax: " + tax
+    output "Total: " + total
+    return cost,tax,total
+end 

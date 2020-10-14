@@ -1,0 +1,18 @@
+def get_number():
+    print("Enter a number: ")
+    number = int(input())
+    return number
+
+def get_bin(number):
+    b = bin(number)
+    return b
+
+def print_binary(b):
+    print("Binary version: " + str(b))
+
+def main():
+    number = get_number()
+    b = get_bin(number)
+    print_binary(b)
+    
+main()

@@ -1,0 +1,20 @@
+function main()
+    number = GetNumber()
+    b = GetBin(number)
+    PrintBinary(b)
+end 
+
+function GetBin(number)
+    b = bin(number)
+    return b
+end 
+
+function GetNumber()
+    output "Enter a number: "
+    input number
+    return number
+end 
+
+function PrintBinary(b)
+    output "Binary version: " + b
+end 
